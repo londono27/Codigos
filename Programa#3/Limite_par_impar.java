@@ -1,33 +1,35 @@
-
-
 import java.util.Scanner;
 
-public class Limite_par_impar {
+public class Limite_par_impar{
 
-  public static void main(String[] args) {
+  public static void main (String[] argv){
 
-    Scanner entrada = new Scanner (System.in);
+  int Inf, Sup;
 
-    int inf, sup;    
-    inf = entrada.nextInt();
-    sup = entrada.nextInt();
+  Scanner leer=new Scanner (System.in);   
+  System.out.println("Ingrese el limite inferior:");
+  Inf=leer.nextInt();
+  System.out.println("Ingrese el limite superior:");
+  Sup=leer.nextInt();
 
-    for (int i=inf; i<=sup; i++){
-      if (i%2 == 0){
-        System.out.println(i);
-      }
-    }
-    int i=inf;
-    while (inf<=sup){
-      if (i%2 == 1){
-        System.out.println(i);
-      }
-    i++;  
+  System.out.println("Pares");
+  for (int i=Inf; i<=Sup; i++){
+    if (i%2==0){
+      System.out.println(i);
     }
   }
-} 
 
-
+  System.out.println("Impares");
+  int j;
+  j=Inf;
+  while (j<=Sup){
+    if (j%2!=0){
+    System.out.println(j);
+    }
+  j++;  
+  }
+  }
+}
 
 
 
