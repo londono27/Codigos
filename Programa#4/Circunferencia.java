@@ -8,15 +8,14 @@ public class Circunferencia extends JApplet {
 
   public void paint (Graphics g) {
   int r=100;
-  int N=2*r+1;
+  int N=2*r;
   int x,y;
 
-    for (int i=0; i<N; i++){
-      for (int j=0; j<N; j++){
-
+    for (int i=1; i<N; i++){
+      for (int j=1; j<N; j++){
         x=i-r;
         y=j-r;
-        if (x*x+y*y<=r*r+1){
+        if (x*x+y*y<=r*r){
           g.drawString (".",i+100,j+75);
         }
       }
